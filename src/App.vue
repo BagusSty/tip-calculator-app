@@ -246,6 +246,19 @@ export default {
         </div>
       </div>
     </div>
+    <div class="copyright">
+      <div class="flex justify-center items-center">
+        <p class="text-sm text-grayCyan">
+          Copyright &copy; 2023
+          <a
+            class="text-grayCyan"
+            href="https://github.com/BagusSty/"
+            target="_blank"
+            >Bagus Sty</a
+          >
+        </p>
+      </div>
+    </div>
   </main>
 </template>
 <style>
