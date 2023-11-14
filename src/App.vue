@@ -95,17 +95,22 @@ export default {
                 >Bill</label
               >
               <span
-                class="block text-red-300 text-xs text-left font-bold mb-2"
+                class="block text-red-400 text-xs text-left font-bold mb-2"
                 v-if="!bill"
                 >Input Bill</span
               >
             </div>
             <div class="relative">
-              <span class="absolute inset-y-0 left-0 flex items-center p-2">
+              <span
+                class="absolute inset-y-0 left-0 flex items-center ml-2 p-2"
+              >
                 <img src="/images/icon-dollar.svg" alt="" />
               </span>
               <input
-                class="text-semibold text-right text-veryDarkCyan placeholder:text-grayCyan bg-veryLightCyan focus:outline-strongCyan hover:border hover:border-strongCyan p-2 px-3 sm:w-80 w-full cursor-pointer rounded-lg remove-arrow"
+                class="text-semibold text-right text-veryDarkCyan placeholder:text-grayCyan bg-veryLightCyan focus:outline-strongCyan hover:border hover:border-strongCyan p-2 px-3 w-full cursor-pointer rounded-lg remove-arrow"
+                :class="{
+                  'border border-red-400': !bill,
+                }"
                 placeholder="0"
                 type="number"
                 name="bill"
@@ -122,7 +127,9 @@ export default {
                 for="email"
                 >Select Tip %</label
               >
-              <span class="text-red-300 text-xs text-left font-bold mb-2 hidden"
+              <span
+                class="text-red-400 text-xs text-left font-bold mb-2"
+                v-if="!customTipPercentage"
                 >Choose Tip</span
               >
             </div>
@@ -162,17 +169,22 @@ export default {
                 >Number of People</label
               >
               <span
-                class="text-red-300 text-xs text-left font-bold mb-2"
+                class="text-red-400 text-xs text-left font-bold mb-2"
                 v-if="!numberOfPeople"
                 >Can't be zero</span
               >
             </div>
             <div class="relative">
-              <span class="absolute inset-y-0 left-0 flex items-center p-2">
+              <span
+                class="absolute inset-y-0 left-0 ml-2 flex items-center p-2"
+              >
                 <img src="/images/icon-person.svg" alt="" />
               </span>
               <input
-                class="text-semibold text-right text-veryDarkCyan placeholder:text-grayCyan bg-veryLightCyan focus:outline-strongCyan hover:border hover:border-strongCyan p-2 px-3 sm:w-80 w-full cursor-pointer rounded-lg remove-arrow"
+                class="text-semibold text-right text-veryDarkCyan placeholder:text-grayCyan bg-veryLightCyan focus:outline-strongCyan hover:border hover:border-strongCyan p-2 px-3 w-full cursor-pointer rounded-lg remove-arrow"
+                :class="{
+                  'border border-red-400': !numberOfPeople,
+                }"
                 placeholder="0"
                 type="number"
                 name="people"
