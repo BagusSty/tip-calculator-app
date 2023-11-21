@@ -1,0 +1,8 @@
+{
+  "appId": "com.calculator_tip",
+  "appName": "calculator_tip",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}

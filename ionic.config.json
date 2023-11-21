@@ -1,0 +1,12 @@
+{
+  "name": "calculator_tip",
+  "integrations": {
+    "capacitor": {
+      "android": {
+        "package": "com.calculator_tip",
+        "version": "1.0.0"
+      }
+    }
+  },
+  "type": "custom"
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Tip Calculator</string>
+    <string name="title_activity_main">Tip Calculator</string>
+    <string name="package_name">com.calculator_tip</string>
+    <string name="custom_url_scheme">com.calculator_tip</string>
+</resources>
